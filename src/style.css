@@ -7,77 +7,108 @@ body{
     background-image:url(img/azulbonito.jpeg);
     margin:0 auto;
     position: absolute, auto;
-    
-      
+
 }
+    
 .area1{
   position: absolute;
   right: 350px;
-  top: 80px;
+  top: 160px;
   width: 300px;
   height: 100px;
+  padding: 8px center;
+  border:dotted salmon;
   z-index: 1;
   cursor: pointer;
-  border: salmon;
+  font-size: 25px;
+  font-family: 'Boogaloo', cursive;
+  color: black;
+  background-image: url(img/hoja.jpg);
+  border-radius: 34px 34px 34px 34px;
+
 }
+
 .offset{
   position: absolute;
-  right: 550px;
+  right: 250px;
   width: 50px;
-  top: 200px;
+  top:50px;
+  font-family: 'Boogaloo', cursive;
+  font-size: 25px;
+  border-radius: 18px 18px 18px 18px;
+  padding: right 5px;
+  color:salmon;
   
 }
-.btnEncrypt{
-  position: absolute;
-  right: 500px;
-  top: 250px;
-}
- .area2{
+
+.area2{
   position: absolute;
   bottom: 250px;
   right: 250px;
   width: 300px;
   height: 100px;
-  border:dotted rgb(39, 220, 233);
+  border:dotted rgb(8, 120, 128);
   padding:0 auto;
-  background-color:hsl(180, 100%, 50% 1.0);
-    
+  background-image: url(img/hoja.jpg);
+  cursor: pointer;
+  font-family: 'Boogaloo', cursive;
+  font-size: 25px;
+  color: black;
+  border-radius: 34px 34px 34px 34px;
+  
  }
- .btnDecrypt{
-   position: absolute;
-   right: 350px;
-   bottom: 200px;
+
+ .p5{
+  position: absolute;
+  right:330px;
+  top:20px;
+  font-size:30px;
+  font-family: 'Kalam', cursive;
+  color: salmon;
+
  }
- .indecifrables{
+
+.p4{
    position: absolute;
    left: 15px;
    bottom:80px;
+   color: aquamarine;
    font-size: 500%;
    font-family: 'McLaren', cursive;
 
  }
- .contraseñas{
+
+.p3{
   position: absolute;
   left: 20px;
   bottom:200px;
-  font-family: 'Carter One', cursive;
+  color: salmon;
+  font-family: 'Kalam', cursive;
   font-size: 400%
-  
-
 
  }
- .tus{
+
+.p2{
   position: absolute;
   left:40px;
-  top:180px;
+  top:140px;
+  color: antiquewhite;
   font-family: 'McLaren', cursive;
-  font-size:300%
+  font-size:400%
 
  }
- .crea{
+
+.p1{
   position: absolute;
   left:50px;
   top:50px;
- 
+  color:aqua;
+  font-family: 'Kalam', cursive;
   font-size:450%
+
+ }
+ 
+ .imagen{
+   height:70px;
+     
  }
