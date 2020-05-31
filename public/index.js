@@ -1,11 +1,11 @@
 
 
 function encode(){
-let offset = parseInt(document.getElementById("des").value);
-let string = document.getElementById("text1").value.toUpperCase();
-let encryptedPassword = window.cipher.encode(offset,string);
-console.log(encryptedPassword);
-document.getElementById("text2").value = encryptedPassword ; 
+    let offset = parseInt(document.getElementById("des").value);
+    let string = document.getElementById("text1").value.toUpperCase();
+    let encryptedPassword = window.cipher.encode(offset,string);
+    console.log(encryptedPassword);
+    document.getElementById("text2").value = encryptedPassword ; 
 
 }
 let codificar1  = document.getElementById("text1");

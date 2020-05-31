@@ -11,7 +11,7 @@
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve ./src"
   },
-   "dependencies": {
+  "dependencies": {
     "eslint": "^5.9.0",
     "htmlhint": "^0.11.0",
     "jest": "^24.9.0",
