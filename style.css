@@ -4,7 +4,7 @@ body{
     width:100%;
     max-width: 1000px;
     height:630px;
-    background-image:url(img/azulbonito.jpeg);
+    background-color:rgb(70, 70, 170);
     margin:0 auto;
     position: absolute, auto;
 
