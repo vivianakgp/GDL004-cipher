@@ -7,88 +7,127 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cyborg/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-GKugkVcT8wqoh3M8z1lqHbU+g6j498/ZT/zuXbepz7Dc09/otQZxTimkEMTkRWHP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <hearde>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
-      <div class="collapse navbar-collapse navbar" id="navbarColor02">
+      <div class="collapse navbar-collapse navbar nav" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Guiá</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Cifrado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Conoce más</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
-  </header>
-  
-  <div id="principal">
-    <img src="./img/crown.png"  class="crown">
-    <h1>ENCRYPTY</h1>
-    <h4>Tus palabras en secreto</h4>
-    <img src="./img/arrow.png" class="arrow">
-    <img src="./img/mrEncrypt.png" class="mrEncrypt">
+  </hearde>
+  <!--section one-->
+  <div class="principal">
+    <div class="principalChild1">
+      <img src="./img/crown.png">
+      <h1>ENCRYPTY</h1>
+      <p>Tus palabras en secreto<p>
+    </div>
+    <div class="principalChild2">
+      <div>
+        <img src="./img/mrEncrypt.png">
+      </div>
+      <div>
+        <img src="./img/arrow.png">
+      </div>
+    </div>
   </div>
-  <div id="benefets">
+  <!--section two-->
+  <div class="benefets">
     <p>ASEGURA TUS MENSAJES CON EL CIFRADO CESAR</p>
-    <P><img src="./img/flecha.png" width="30px">Manda mensajes ocultos.</P>
-    <p><img src="./img/flecha.png" width="30px">Manten tus mensajes lejos de ojos curiosos.</p>
-    <p><img src="./img/flecha.png" width="30px">Cifra y descifra mediante una clave que tu eliges. </p>
-    <p><img src="./img/flecha.png" width="30px">Solo quien conozca tu clave podrá descifrar tu mensaje.</p>
-
+    <div>
+      <P><img src="./img/flecha.png" >Manda mensajes ocultos.</P>
+      <p><img src="./img/flecha.png" >Manten tus mensajes lejos de ojos curiosos.</p>
+      <p><img src="./img/flecha.png" >Cifra y descifra mediante una clave que tu eliges. </p>
+      <p><img src="./img/flecha.png" >Solo quien conozca tu clave podrá descifrar tu mensaje.</p>
+      <div></div>
+    </div>
   </div>
+  <!--section three-->
   <div id="guide">
     <div class="separationDiv"></div>
     <p class="pGuide">¿COMÓ FUNCIONA?</p>
-    <div id="subGuide">
-      <div class="circle1">
+    <div class="subGuide">
+     <div>
+        <p>1</p>
         <div>
           <p>Elige<br>un numero<br>de desplazamiento<br>el cual sera tu<br>clavé.</p>
         </div>
+        <img src="./img/choose.png">
       </div>
-      <div class="circle2">
+      <div>
+        <p>2</p>
         <div>
           <p>Escribe<br>tu mensaje en el<br>área de texto.</p>
         </div>
+        <img src="./img/write.png">
       </div>
-      <div class="circle3">
+      <div >
+        <p>3</p>
         <div>
           <p>Da click<br>en el boton de <br>cifrar y Listo!<br>aparecerá tu<br>mensaje cifrado.</p>
         </div>
+        <img src="./img/click.png">
       </div>
-      <div class="circle4">
+      <div >
+        <p>4</p>
         <div>
-          <p>Sigue <br>los mismos pasos <br>para descifrar tus mensajes</p>
+          <p>Sigue<br>los mismos<br> pasos para descifrar<br> tus mensajes</p>
         </div>
       </div>
-
     </div>
-    
-
-
   </div>
+  <!--section four-->
   <div id="cifrado">
-
+    <p>CIFRA Y DECIFRA</p>
+    <div>
+      <p>Elige in desplazamiento<input type="number"></p> 
+    </div>
+    <div>
+      <input type="text">
+      <input type="text">  
+    </div>
+    <div>
+      <button>CIFRAR</button>
+      <button>DESCIFRAR</button>
+    </div>
+    <div>
+      <img src="./img/mask.png">
+    </div>
   </div>
+  <!--section five-->
   <div id="learnMore">
-
+   <p>¿QUÉ ES EL CIFRADO CESAR?</p>
+   <div>
+     <p>El "cidrado de cesar" permitió a julio César proteger sus mensajes importantes de las miradas no auntorizadas.
+       Este indudable genio militar precisaba de un mecanismo seguro para comunicar sus estrategias a sus generales.
+     </p>
+     <img src="./img/juliocesar.png">
+   </div>
+   <div>
+     <p>Consiste en trasladar las palabras del texto a cifrar un número determinado de posiciones en
+        el alfabeto.Este número de posiciones será la clave que nesecitaremos para descifrar más tarde nuestro mensaje.<a>conoce más</a>
+      </p>
+      <img src="./img/mrEncrypt2.png">
+   </div>
   </div>
  <footer>viviana</footer>
 </body>
