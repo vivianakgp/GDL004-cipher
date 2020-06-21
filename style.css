@@ -1,3 +1,4 @@
+
 body{
   background-color: rgb(95, 95, 167);
   /*height: 3500px;*/
@@ -9,6 +10,9 @@ body{
 footer{
   background-color: deeppink;
   color: azure;
+}
+h1{
+  text-shadow: 2px 2px 5px #0F1734;
 }
 .nav{
   /*background-color: darkturquoise;*/
@@ -24,7 +28,7 @@ footer{
   -webkit-flex-direction: column;
   align-items: center;
 }
-.principalChild1{
+.principal div:nth-child(1){
   /*background-color: rgba(180, 143, 163, 0.473);*/
   margin-top: 80px;
   display: flex;
@@ -38,29 +42,32 @@ footer{
   display: flex;
   flex-direction: row;
 }
-img[src$="./img/mrEncrypt.png"]{
+.principal div p{
+  font-size: 30px;
+  color:#F8F4F4;
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 5px;
+}
+img[src="./img/mrEncrypt.png"]{
   width:150px;
   margin-top: 30px;
 }
-.principal div p{
-  font-size: 50px;
-  color:#F8F4F4;
-  font-family: 'Architects Daughter', cursive;
-  
-
+img[src="./img/crown.png"] {
+  width: 50px;
 }
-.principalChild2>div:nth-child(1){
-  /*background-color: white;*/
+
+.principalChild2>div:nth-child(1){/* div mrEncrypt*/
+  background-color: white;
   width: 155px;
   margin-right:50px;
 }
-.principalChild2>div:nth-child(2){
-  /*background-color: tomato;*/
+.principalChild2>div:nth-child(2){/*div de flechita */
+  background-color: tomato;
   margin-top: 70px;
   margin-right: 200px;
 }
 
-
+/*********************************************************************/
 .benefets{
   background-color:#FFFFFF;
   width: 100%;
@@ -73,7 +80,12 @@ img[src$="./img/mrEncrypt.png"]{
   align-items: center;
   
 }
-.benefets >div >div{/*DIV INVISIBLE*/
+@media  only screen and (max-width: 600px){
+  .benefets{
+    background-color: violet;
+  }
+}
+.benefets >div >div{/*div invisible para agrandar el height*/
   /*background-color: teal;*/
   height: 230px;
 }
@@ -82,8 +94,7 @@ img[src$="./img/mrEncrypt.png"]{
   margin-top: 88px;
   font-size: 50px;
   color: #23305E;
-  text-shadow: #B1ABAB;
-   /*text-shadow: 10px #302b2b;*/
+  text-shadow: 2px 2px 5px #707070;
 }
 .benefets >div {
   /*background-color: darksalmon;*/
@@ -96,9 +107,9 @@ p > img[src="./img/flecha.png"]{
   margin-right: 15px;
   margin-bottom: 15px;
 }
-div > img{
+/**********************************************/
+div > img{/*tamaño de cualquier img dentro de un div*/
   width: 100px;
-  
 }
 #guide{
   background-color:#FFFFFF;
@@ -115,10 +126,11 @@ div > img{
   font-size: 50px;
   color:#B945D5;
   margin-left: 90px;
+
 }
+
 .subGuide{
  /*background-color: rgba(173, 216, 230, 0.158);*/
- /*box-shadow:0 0 5px rgb(216, 222, 231) ;*/
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -144,16 +156,13 @@ div > img{
   color: #928C8B;
   
 }
-  .subGuide >div:nth-child(1){
+  .subGuide >div:nth-child(odd){/*selecciona los divs impares 1y3*/
     margin-top: 80px;
  
 }
-.subGuide >div:nth-child(3){
-  margin-top: 80px;
-
-}
-.subGuide >div:nth-child(2) div p{
+.subGuide >div:nth-child(2) div p{/*agranda el div de texto del circulo 2*/
    height: 180px;
+  /* background-color: maroon;*/
   
 }
 .subGuide >div > p{
@@ -162,49 +171,166 @@ div > img{
   color: rgba(15, 23, 52, 0.658);
   font:xx-large;
 }
-.circle2{
-  width: 250px;
-  height: 300px;
-  margin-top: 20px;
-  /*border-radius: 150px;*/
-  background-color: #C2E6EA;
-  display: flex;
-  padding-top: 20px;
-  justify-content: center;
-}
-.circle3{
-  width: 300px;
-  height: 300px;
-  margin-top: 70px;
-  border-radius: 150px;
-  background-color: #C2E6EA;
-  display: flex;
-  padding-top: 20px;
-  justify-content: center;
-}
-.circle4{
-  width: 300px;
-  height: 300px;
-  margin-top: 20px;
-  border-radius: 150px;
-  background-color: #C2E6EA;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-#cifrado{
+/************************************************************/
+.cipher{
   height:715px;
   background-color:#0F1734 ;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 
 }
-#learnMore{
+.cipher >p{/*CIFRA Y DESCIFRA*/
+  /*background-color: thistle;*/
+  margin:0 90px 0 90px;
+  color: #646B6E;
+  font-size:50px;
+  
+  
+}
+.cipher div:nth-child(1){/*div transparente*/
+  /*background-color: blueviolet;*/
+  height:88px;
+}
+.cipher div:nth-child(3) p{/*ELIGE UN DESPLAXAMIENTO*/
+ /* background-color: aqua;*/
+  margin: 18px 90px 0 90px;
+  color: #F8F4F4;
+  font-size: 30px;
+  text-align: center;
+}
+.cipher div:nth-child(3) p input{/*INPUT NUMEROS*/
+  /* background-color: khaki;*/
+  width: 100px;
+  height: 45px;
+  border-radius: 25px;
+  border-color: #0F1734;
+  margin-left: 10PX;
+  color: #646B6E;
+  text-align: center;
+}
+.inputs{
+ /* background-color: rgb(209, 84, 178);*/
+  margin: 35px 90px 0 90px;
+  height: 300px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+
+}
+/*.div-input1{
+  background-color: rgb(255, 94, 0);
+}
+.div-input2{
+background-color: rgb(199, 17, 17);
+}*/
+.div-input1 input {
+  width:550px;
+  height: 250px;
+  border-radius: 25px;
+  border-color: #0F1734;
+}
+.div-input2 input{
+  width:650px;
+  height:250px;
+  border-radius: 25px;
+  border-color:rgba(248, 244, 244, 0.966);
+  background-color: #0F1734;
+  
+}
+.btns{
+  /*background-color: rgb(235, 154, 197);*/
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.btns :nth-child(1){
+  background-color: #E94471;
+  color: #F8F4F4;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border-color:#0F1734;
+
+} 
+.btns :nth-child(2){
+  background-color: #74D5A5;
+  border-color:#0F1734;
+  color: #F8F4F4;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  
+}
+img[src="./img/mask.png"]{
+  width:198px
+}
+.div-input2 > div{
+  /*background-color: rgb(146, 247, 126);*/
+  margin-top:5px;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+     
+
+/*******************************************************/
+.learnMore{
   height:715px;
   background-color:#F8F4F4;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.learnMore > p{/*QUE ES EL CIFRADO CESAR*/
+  /*background-color: gold;*/
+  font-size: 50px;
+  color:#74D5A5;
+  margin:0 90px 0 90px;
+  
+}
+.learnMore div:nth-child(1){
+  /*background-color: fuchsia;*/
+  height: 88px;
+}
+.learnMore div:nth-child(2){/*es el parrafo y las img*/
+  background-color: rgb(85, 141, 173);
+}
+.learnMore div:nth-child(3){
+ /*background-color: rgb(64, 196, 119);*/
+  margin:15px 90px 0 90px;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+img[src="./img/juliocesar.png"]{
+  width: 190px;
+  /*margin-right:100px;*/
+}
+.learnMore div:nth-child(3) p{/*texto largo*/
+  color:#707070;
+  font-size: 25px;
+  line-height: 30px;
+}
+.learnMore div:nth-child(4){
+  /*background-color: rgb(233, 162, 129);*/
+  height: 250px;
+  margin:0 90px 0 90px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.learnMore div:nth-child(4) p{
+  color:#707070;
+  font-size: 25px;
+  line-height: 30px;
+  align-self: flex-start;
+
+}
+.learnMore div:nth-child(4) img{
+     align-self: flex-end;
+}
+
+
 
  /* flexbox setup 
  display: -webkit-flex;
@@ -214,19 +340,3 @@ div > img{
  flex-direction: row;*/
 
 /*
-.circle1:nth-child(1){
-  font-size: 40px;
-  color: #B945D5;
-  
-}
- width: 250px;
-  height: 250px;
-  margin-top: 70px;
-  background-color: #C2E6EA;
-  border-radius: 150px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  justify-content: center;
-  align-items: center;
-*/

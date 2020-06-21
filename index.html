@@ -22,13 +22,13 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Guiá</a>
+            <a class="nav-link" href="#guide">Guiá</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cifrado</a>
+            <a class="nav-link" href="#cipher">Cifrado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conoce más</a>
+            <a class="nav-link" href="#learnMore">Conoce más</a>
           </li>
         </ul>
       </div>
@@ -36,7 +36,7 @@
   </hearde>
   <!--section one-->
   <div class="principal">
-    <div class="principalChild1">
+    <div>
       <img src="./img/crown.png">
       <h1>ENCRYPTY</h1>
       <p>Tus palabras en secreto<p>
@@ -96,35 +96,44 @@
     </div>
   </div>
   <!--section four-->
-  <div id="cifrado">
-    <p>CIFRA Y DECIFRA</p>
+  <div id="cipher" class="cipher">
+    <div></div>
+    <p>CIFRA Y DESCIFRA</p>
     <div>
-      <p>Elige in desplazamiento<input type="number"></p> 
+      <p>Elige un desplazamiento<input type="number"></p> 
     </div>
-    <div>
-      <input type="text">
-      <input type="text">  
+    <div class="inputs">
+      <div class="div-input1">
+       <input type="text">
+       <div class="btns">
+        <button>CIFRAR</button>
+        <button>DESCIFRAR</button>
+       </div>
+      </div>
+      <div class="div-input2">
+        <input type="text">
+        <div>
+          <img src="./img/mask.png">
+        </div>
+         
+      </div>  
     </div>
-    <div>
-      <button>CIFRAR</button>
-      <button>DESCIFRAR</button>
-    </div>
-    <div>
-      <img src="./img/mask.png">
-    </div>
+    
   </div>
   <!--section five-->
-  <div id="learnMore">
+  <div class="learnMore">
+   <div></div>
    <p>¿QUÉ ES EL CIFRADO CESAR?</p>
    <div>
-     <p>El "cidrado de cesar" permitió a julio César proteger sus mensajes importantes de las miradas no auntorizadas.
-       Este indudable genio militar precisaba de un mecanismo seguro para comunicar sus estrategias a sus generales.
+     <p>El "cidrado de cesar" permitió a julio César proteger <br>sus mensajes importantes de las miradas no auntorizadas.<br>
+       Este indudable genio militar precisaba de un mecanismo<br> seguro para comunicar sus estrategias a sus generales.
      </p>
      <img src="./img/juliocesar.png">
    </div>
    <div>
-     <p>Consiste en trasladar las palabras del texto a cifrar un número determinado de posiciones en
-        el alfabeto.Este número de posiciones será la clave que nesecitaremos para descifrar más tarde nuestro mensaje.<a>conoce más</a>
+     <p>Consiste en trasladar las palabras del texto a cifrar<br> un número determinado de posiciones en
+        el alfabeto.<br>Este número de posiciones será la clave que nesecitaremos<br> para descifrar más tarde nuestro mensaje.
+        <br><a>conoce más</a>
       </p>
       <img src="./img/mrEncrypt2.png">
    </div>

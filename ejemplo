@@ -1,0 +1,19 @@
+.cipher > div p {
+  /*background-color: turquoise;*/
+  margin: 18px 90px 0 90px;
+  color: #F8F4F4;
+  font-size: 30px;
+  text-align: center;
+}
+.cipher > div p input{
+ /* background-color: khaki;*/
+  width: 100px;
+  height: 45px;
+  border-radius: 25px;
+  margin-left: 10PX;
+  color: #646B6E;
+}
+.cipher div:nth-child(4){
+  background-color: aliceblue;
+  margin: 15px 90px 0 90px;
+}
